@@ -19,6 +19,8 @@
 		67B843DE8BF60714267EADCB /* libPods-rnbridge-rnbridgeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CC8F5480E23ADBFCE8E675B2 /* libPods-rnbridge-rnbridgeTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		899CA3DDDB48AE6D335BCAE0 /* libPods-rnbridge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F3650D1A5F2CB117A700423 /* libPods-rnbridge.a */; };
+		E036DD0E24ED88AA00E7F74B /* HelloFromTheOtherSide.h in Sources */ = {isa = PBXBuildFile; fileRef = E036DD0D24ED88AA00E7F74B /* HelloFromTheOtherSide.h */; };
+		E036DD1024ED8C6100E7F74B /* HelloFromTheOtherSide.m in Sources */ = {isa = PBXBuildFile; fileRef = E036DD0F24ED8C6100E7F74B /* HelloFromTheOtherSide.m */; };
 		FE2BE7633FF50AF744C02824 /* libPods-rnbridge-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1062727A7C6E5216E18DC0BE /* libPods-rnbridge-tvOSTests.a */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +65,8 @@
 		A5DA04BFF5FD61B190F4BE92 /* Pods-rnbridge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnbridge.release.xcconfig"; path = "Target Support Files/Pods-rnbridge/Pods-rnbridge.release.xcconfig"; sourceTree = "<group>"; };
 		ABE2D4C594915E0BF7924651 /* Pods-rnbridge-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnbridge-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-rnbridge-tvOSTests/Pods-rnbridge-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CC8F5480E23ADBFCE8E675B2 /* libPods-rnbridge-rnbridgeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rnbridge-rnbridgeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E036DD0D24ED88AA00E7F74B /* HelloFromTheOtherSide.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HelloFromTheOtherSide.h; path = rnbridge/HelloFromTheOtherSide.h; sourceTree = "<group>"; };
+		E036DD0F24ED8C6100E7F74B /* HelloFromTheOtherSide.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = HelloFromTheOtherSide.m; path = rnbridge/HelloFromTheOtherSide.m; sourceTree = "<group>"; };
 		E6BCFBA3C866D9D5314A82F8 /* Pods-rnbridge-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnbridge-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-rnbridge-tvOSTests/Pods-rnbridge-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		EC1F0961D6F6ED4D8343C769 /* Pods-rnbridge-rnbridgeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnbridge-rnbridgeTests.debug.xcconfig"; path = "Target Support Files/Pods-rnbridge-rnbridgeTests/Pods-rnbridge-rnbridgeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -132,6 +136,8 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				E036DD0D24ED88AA00E7F74B /* HelloFromTheOtherSide.h */,
+				E036DD0F24ED8C6100E7F74B /* HelloFromTheOtherSide.m */,
 			);
 			name = rnbridge;
 			sourceTree = "<group>";
@@ -194,7 +200,6 @@
 				ABE2D4C594915E0BF7924651 /* Pods-rnbridge-tvOSTests.debug.xcconfig */,
 				E6BCFBA3C866D9D5314A82F8 /* Pods-rnbridge-tvOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -577,6 +582,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				E036DD0E24ED88AA00E7F74B /* HelloFromTheOtherSide.h in Sources */,
+				E036DD1024ED8C6100E7F74B /* HelloFromTheOtherSide.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
