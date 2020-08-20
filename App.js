@@ -29,6 +29,7 @@ import {
 const App: () => React$Node = () => {
   const [greeting, setGreeting] = useState('');
   const [names, setNames] = useState([]);
+  const [user, setUser] = useState({});
 
   useEffect(() => {
     const getNativeGreeting = async () => {
@@ -43,8 +44,22 @@ const App: () => React$Node = () => {
     };
     generateNames();
   }, []);
+  console.log(names);
 
-  console.log(names)
+  useEffect(() => {
+    const capitaliseUserNames = async (user) => {
+      try {
+        const capitalizedUser = await NativeModules.HelloFromTheOtherSide.capitaliseUserNames(user);
+        setUser(capitalizedUser);
+      } catch (err) {
+        console.log(err);
+      }
+    };
+    const user = {firstName: 'justin', lastName: 'g'};
+    capitaliseUserNames(user);
+  }, []);
+
+  console.log(user);
   return (
     <SafeAreaView>
       <Text>{greeting}</Text>
